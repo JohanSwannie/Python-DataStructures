@@ -87,11 +87,27 @@ def setMethods():
     set22.pop()
     print('set22 is now', set22)
     
+    # ? Return a set that contains all items from both sets, except items that are present 
+    # ? in both sets:
+    
+    set23 = {'Donkey', "Horse", "Duck", "Dog", "Sheep"}
+    set24 = {"Cat", "Chicken", "Donkey", "Duck", "Dog"}
+    set25 = set23.symmetric_difference(set24);
+    print('set25 is now', set25)
+    
+    # ? Symmetric_difference_update Remove the items that are present in both sets,  
+    # ? AND insert the items that is not present in both sets:
+    
+    set26 = {'Donkey', "Horse", "Duck", "Dog", "Sheep"}
+    set27 = {"Cat", "Chicken", "Donkey", "Duck", "Dog"}
+    set26.symmetric_difference_update(set27)
+    print('set26 is now', set26)
+    
     # ? Union Return a set that contains all items from both sets - duplicates are excluded
     
-    set23 = {26, 28, 44, 57, 80, 21, 27, 44}
-    set24 = {57, 33, 41, 7, 10, 26, 44, 43}
-    set25 = set23.union(set24)
-    print('set25 is now', set25)
+    set29 = {26, 28, 44, 57, 80, 21, 27, 44}
+    set30 = {57, 33, 41, 7, 10, 26, 44, 43}
+    set31= set29.union(set30)
+    print('set31 is now', set31)
     
 setMethods();
